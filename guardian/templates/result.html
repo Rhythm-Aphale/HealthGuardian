@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card shadow">
+    <div class="card-body">
+        <h3 class="card-title mb-4">Your Query:</h3>
+        <div class="alert alert-secondary">{{ user_input }}</div>
+        
+        <h3 class="card-title mb-4 mt-5">HealthGuardian's Response:</h3>
+        <div class="alert alert-info" style="white-space: pre-wrap;">{{ ai_response }}</div>
+        
+        <a href="/" class="btn btn-outline-primary mt-4">Ask Another Question</a>
+    </div>
+</div>
+{% endblock %}
